@@ -7,8 +7,8 @@ const request = supertest(app);
 
 describe('As a user I want to send a request and get a capitalized message', () => {
 
-  test('Should return JACOB when sending a GET request to /capitalize-me', async () => {
-    let response = await request.get('/capitalize-me?message=Jacob');
-    expect(response.text).toEqual('JACOB');
+  test('Should return JACOB when sending a GET request to /dinosaur-me', async () => {
+    let response = await request.get('/dinosaur-me?message=Cody');
+    expect(response.text).toEqual('CODYL');
   });
 });
